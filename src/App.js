@@ -1,3 +1,10 @@
+import React from 'react';
+import Feedback from './components/Feedback';
+
 export default function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="container">
+      <Feedback />
+    </div>
+  );
 }
