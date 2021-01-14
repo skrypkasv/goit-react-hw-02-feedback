@@ -1,0 +1,24 @@
+.digit {
+  font-weight: 700;
+}
+
+.good {
+  font-weight: 700;
+
+  color: #20b2aa;
+}
+.neutral {
+  font-weight: 700;
+
+  color: #708090;
+}
+.bad {
+  font-weight: 700;
+
+  color: #ff0000;
+}
+
+.positive {
+  font-weight: 700;
+  color: #4169e1;
+}

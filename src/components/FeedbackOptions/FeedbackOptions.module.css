@@ -1,3 +1,25 @@
-.button {
+button {
   margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  background-color: #fffacd;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+button:focus {
+  outline: none;
+  border: 1px solid #212121;
+}
+
+.good:hover {
+  background-color: #20b2aa;
+}
+
+.neutral:hover {
+  background-color: Silver;
+}
+
+.bad:hover {
+  background-color: #ff0000;
 }
