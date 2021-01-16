@@ -4,17 +4,21 @@ import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   const keysFromState = Object.keys(options);
+
+  const capitalize = s => {
+    return s[0].toUpperCase() + s.slice(1);
+  };
+
   return (
     <div className="feedback">
-      <button type="button" id={keysFromState[0]} className={styles.good} onClick={onLeaveFeedback}>
-        God
-      </button>
-      <button type="button" id={keysFromState[1]} className={styles.neutral} onClick={onLeaveFeedback}>
-        Neutral
-      </button>
-      <button type="button" id={keysFromState[2]} className={styles.bad} onClick={onLeaveFeedback}>
-        Bad
-      </button>
+      {keysFromState.map(key => {
+        const text = capitalize(key);
+        return (
+          <button type="button" id={key} className={styles[key]} onClick={onLeaveFeedback} key={key}>
+            {text}
+          </button>
+        );
+      })}
     </div>
   );
 }
